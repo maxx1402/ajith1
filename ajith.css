@@ -1,0 +1,184 @@
+* {
+  box-sizing: border-box;
+  font-family: Helvetica;
+}
+
+.content {
+  margin: auto;  
+}
+
+.row {  
+  margin: auto;
+  overflow: auto;
+  background-color: #eeddaa;  
+}
+
+div.col-6 {    
+  float: left;
+  overflow: auto;  
+}
+
+img {
+  display: block;
+  float: left;
+  height: auto;
+  width: 100%;  
+}
+
+div.a{
+  word-spacing: 10px;
+}
+
+p.b{
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align:left;
+}
+p.c{
+  font-family:'Times New Roman', Times, serif;
+  text-align: left;
+}
+
+
+div.row:first-of-type::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+header {
+  overflow: hidden;
+  margin: auto;
+  margin-bottom: 2em;
+}
+header h2 {
+  display: inline-block;  
+}
+
+header h2:first-of-type {  
+  float: right;
+}
+
+header h2:last-of-type {
+  float: right;
+}
+
+header h1 {
+  display: inline-block;  
+}
+
+header h1:first-of-type {  
+  float: left;
+}
+
+header h1:last-of-type {
+  float: left;
+}
+
+header::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+header a {
+  display: block;
+  text-decoration: none;
+  color: black; 
+  padding: .5em 1em;
+}
+
+header h2:hover {
+  background-color: #ccc;
+}
+
+#about {
+  /*background-color: #f1f1f1;*/
+  margin: auto;  
+}
+
+#i{
+  width: 300px;
+  height: 100px;
+}
+
+.boy {
+  width: 300px;
+  max-width: 100%;
+  height: auto;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 3em;
+}
+
+#about p {
+  clear: both;
+  margin-bottom: 2em;
+}
+
+#about-container {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+#about-container div.row {  
+  margin: auto;  
+  background-color: #f1f1f1;
+}
+
+form {  
+  margin: auto;  
+}
+
+form * {
+  width: 100%;
+}
+
+form label {
+  display: block;
+  font-weight: 600;
+}
+
+form input[type='text'] {
+  padding: .5em 1em;  
+}
+
+input[type='submit'] {
+  display: block;
+  margin: auto;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  background-color: #616161;
+  color: white;  
+}
+
+input[type='submit']:hover {
+  background-color: #ccc;
+  color: black;
+}
+
+form p:first-of-type {
+  color: red;
+}
+
+form div {
+  margin-bottom: 1em;
+}
+
+[class*=col-] {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {  
+  /* For desktop */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}  
+}
